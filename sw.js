@@ -4,7 +4,7 @@ self.addEventListener('install', (event) => {
     event.waitUntil(
         caches
             .open(CACHE)
-            .then((cache) => cache.addAll(['/testSW/css/style.css']))
+            .then((cache) => cache.addAll(['/MaksOn/css/style.css']))
             .then(() => self.skipWaiting())
     );
 });
