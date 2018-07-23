@@ -27,7 +27,7 @@ function networkOrCache(request) {
 }
 
 const FALLBACK =
-    '<script>console.log(\"Блин. Чувак. У тебя инета нет((\");</script>\n' + /
+    '<script>console.log(\"Блин. Чувак. У тебя инета нет((\");</script>\n' + 
     '<link rel="stylesheet" type="text/css" href="/testSW/css/style.css">\n' +
     '<div id=\"off\">\n' +
     '    <h1>Хей. Молодец!)<h1>\n' +
