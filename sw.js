@@ -5,8 +5,6 @@ self.addEventListener('install', (event) => {
         caches
             .open(CACHE)
             .then((cache) => cache.addAll(['/MaksOn/css/style.css']))
-	    .then((cache) => cache.addAll(['/MaksOn/css/mn.css']))
-	    .then((cache) => cache.addAll(['/MaksOn/images/fire.jpg']))
             .then(() => self.skipWaiting())
     );
 });
