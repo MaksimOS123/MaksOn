@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<link rel="stylesheet" type="text/css" href="/MaksOn/css/style.css">
+		<link rel="stylesheet" type="text/css" href="/MaksOn/css/mn.css">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Лебедьков Максим</title>
+    <script>
+      if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('./sw.js')
+            .then(() => navigator.serviceWorker.ready.then((worker) => {
+              worker.sync.register('syncdata');
+            }))
+            .catch((err) => console.log(err));
+      }
+    </script>
+	</head>
+    <body>
+		<input type="checkbox" id="nav-toggle" hidden>
+			<nav class="nav">
+				<label for="nav-toggle" class="nav-toggle" onclick></label>
+				<h2 class="logo">
+					<a href="/MaksOn/">Лебедьков Максим</a>
+				</h2>
+				<ul>
+					<li><a href="/MaksOn/about/index.php">О себе</a>
+					<li><a href="/MaksOn/uslugi.php">Услуги</a>
+					<li><a href="/MaksOn/cost.php">Цены</a>
+				</ul>
+			</nav>
+        <div id="header">
+			<div id="header-zglv">
+				<h1><a href="/MaksOn/" class="home">Лебедьков Максим</a></h1>
+			</div>
+		</div>
+    <body>
+    	<div id="content">
+    		<form action="news" method="post" name="news">
+    			<fieldset class="clearfix">
+    				<img src="/image/fire.jpg"><br>
+    			</fieldset>
+    		</form>
+    	</div>
+    </body>
+    <div id="footer">
+        <h6>Лебедьков Максим</h6>
+    </div>
+</html>
