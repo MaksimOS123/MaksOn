@@ -6,16 +6,20 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
     	<meta name="yandex-verification" content="3d8ca422ddb36fe1" />
         <title>Лебедьков Максим</title>
-	    <script>
-	      if ('serviceWorker' in navigator) {
-		  navigator.serviceWorker.register('./sw.js')
-		    .then(() => navigator.serviceWorker.ready.then((worker) => {
-		      worker.sync.register('syncdata');
-		    }))
-		    .catch((err) => console.log(err));
-	      }
-	    </script>
-	</head>
+	<script>
+	    if ('serviceWorker' in navigator) {
+		 navigator.serviceWorker.register('./sw.js')
+		 .then(() => navigator.serviceWorker.ready.then((worker) => {
+		     worker.sync.register('syncdata');
+		 }))
+		 .catch((err) => console.log(err));
+	    }
+	</script>
+	<script type='text/javascript'>
+		if(window.innerWidth<800)
+		    location.href='https://maksimos123.github.io/MaksOn/news.html';
+	</script>
+    </head>
     <body>
 		<input type="checkbox" id="nav-toggle" hidden>
 			<nav class="nav">
