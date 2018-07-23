@@ -7,6 +7,12 @@ self.addEventListener('install', (event) => {
             .then((cache) => cache.addAll(['/MaksOn/css/style.css']))
             .then(() => self.skipWaiting())
     );
+    event.waitUntil(
+        caches
+            .open(CACHE)
+            .then((cache) => cache.addAll(['/MaksOn/news.html']))
+            .then(() => self.skipWaiting())
+    );
 });
 
 self.addEventListener('activate', (event) => {
@@ -33,6 +39,7 @@ const FALLBACK =
     '    <h1>Хей. Молодец!)<h1>\n' +
     '    <h3>Тебе наверно интересно как это все работает, да?) Что же. Я дам тебе исходники))<h3><p><p>\n' +
     '    <p><p><h5>Исходники, кншн, на GitHub: https://github.com/MaksimOS123/testSW<h5>\n' +
+    '	 <p><a href="/MaksOn/news.html>Haha< clasic</a>' +
     '</div>';
 
 const Error404 =
@@ -47,7 +54,7 @@ const Error404 =
       ' <body>\n' +
       '  <div id =\"header\">\n' +
       '   <div id =\"header-zglv\">\n' +
-      '    <h1><a href="/testSW/" class="home">ЧТО ЭТО, ЕПТ?</a></h1>\n' +
+      '    <h1><a href="/MaksOn/" class="home">ЧТО ЭТО, ЕПТ?</a></h1>\n' +
       '   </div>\n' +
       '  </div>\n' +
       '   <table>\n' +
@@ -55,7 +62,7 @@ const Error404 =
       '     <th>\n' +
       '      <blockquote><blockquote></blockquote></blockquote>\n' +
       '     </th><th>\n' +
-      '      <h2><b>Страница не найдена</b></h2><p><blockquote><h5>Неправильно набран адрес, или такой страницы больше не существует, а возможно, никогда<br>и не существовало.</h5></blockquote><blockquote><h5><b>Проверьте адрес</b> или <a href="/testSW/">перейдите на главную страницу</a>.</h5></blockquote>' +
+      '      <h2><b>Страница не найдена</b></h2><p><blockquote><h5>Неправильно набран адрес, или такой страницы больше не существует, а возможно, никогда<br>и не существовало.</h5></blockquote><blockquote><h5><b>Проверьте адрес</b> или <a href="/MaksOn/">перейдите на главную страницу</a>.</h5></blockquote>' +
       '	    </th><th><img src="/testSW/image/error404.jpg" align=top></th></td></table></html>';
 
 function useFallback() {
