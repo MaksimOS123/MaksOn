@@ -33,7 +33,7 @@ const FALLBACK =
     '    <h1>Хей. Молодец!)<h1>\n' +
     '    <h3>Тебе наверно интересно как это все работает, да?) Что же. Я дам тебе исходники))<h3><p><p>\n' +
     '    <p><p><h5>Исходники, кншн, на GitHub: https://github.com/MaksimOS123/testSW<h5>\n' +
-    '	 <p><a href="/MaksOn/news.html>Haha< clasic</a>\n' +
+    '	 <p><a href=\"/MaksOn/news.html\">Haha, clasic</a>\n' +
     '</div>';
 
 const Error404 =
