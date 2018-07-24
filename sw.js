@@ -2,7 +2,7 @@ const CACHE = 'offline-fallback-v1';
 
 setInterval(function(){
 	if(!navigator.onLine){
-		location = location;
+		location.reload();
 	}
 }, 1000);
 
