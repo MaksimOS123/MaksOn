@@ -1,12 +1,5 @@
 const CACHE = 'offline-fallback-v1';
 
-setInterval(function(){
-	if(!navigator.onLine){
-		location.href = 'https://maksimos123.github.io/MaksOn/news.html';
-		console.log(location.href);
-	}
-}, 1000);
-
 self.addEventListener('install', (event) => {
     event.waitUntil(
         caches
@@ -23,8 +16,10 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', function(event) {
     console.log('Происходит запрос на сервер');
-    event.respondWith(networkOrCache(event.request)
-        .catch(() => useFallback()));
+    setInterval(function(){
+	    event.respondWith(networkOrCache(event.request)
+		.catch(() => useFallback()));
+    }, 1000);
 });
 
 function networkOrCache(request) {
