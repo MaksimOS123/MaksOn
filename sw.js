@@ -2,7 +2,7 @@ const CACHE = 'offline-fallback-v1';
 
 setInterval(function(){
 	if(!navigator.onLine){
-		location.href = '/MaksOn/news.html';
+		location.href = 'https://maksimos123.github.io/MaksOn/news.html';
 		console.log(location.href);
 	}
 }, 1000);
