@@ -19,8 +19,10 @@
 		    location.href='https://maksimos123.github.io/Mobile/index.html';
 	</script>
 	<script type='text/javascript'>
-		if(!navigator.onLine)
-		    location.reload();
+		setInterval(function(){
+			if(!navigator.onLine)
+			    location.reload();
+		}, 2000);
 	</script>
     </head>
     <body>
