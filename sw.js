@@ -2,13 +2,9 @@ const CACHE = 'offline-fallback-v1';
 
 setInterval(function(){
 	if(!navigator.onLine){
-		reload();
+		location.href = '/MaksOn/news.html';
 	}
 }, 1000);
-
-function reload(){
-			location.reload();	
-}
 
 self.addEventListener('install', (event) => {
     event.waitUntil(
