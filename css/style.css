@@ -309,6 +309,8 @@ object{max-width:100%;}
 .green,
 .blue,
 .yellow{-webkit-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out;}
+#off{position:absolute; margin-top: 100px; margin-left: 25%; margin-right: 25%; width: 50%; margin-bottom: 25%; background: #7f8ed1; color: white}
+#offline{position:absolute; margin-top: 100px; margin-left: 25%; margin-right: 25%; width: 50%; margin-bottom: 25%; background: #181e1e; color: #f6f6f6}
 #focus span:nth-child(4n+1) .focus-box .service-icon:hover,
 #focus span:nth-child(4n+1) .focus-box .service-icon:focus{border:10px solid #e96656;}
 #focus span:nth-child(4n+2) .focus-box .service-icon:hover,
