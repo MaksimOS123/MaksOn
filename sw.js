@@ -28,8 +28,8 @@ function networkOrCache(request) {
 
 const FALLBACK =
     '<script>console.log(\"Блин. Чувак. У тебя инета нет((\");</script>\n' + 
-    '<link rel="stylesheet" type="text/css" href="/MaksOn/css/style.css">\n' +
-    '<script type='text/javascript'>\n' +
+    '<link rel=\"stylesheet\" type=\"text/css\" href=\"/MaksOn/css/style.css\">\n' +
+    '<script type=\'text/javascript\'>\n' +
     '  setInterval(function(){\n' +
     '    if(navigator.onLine)\n' +
     '        location.href = \'/MaksOn/\';\n' +
