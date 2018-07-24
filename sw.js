@@ -29,6 +29,12 @@ function networkOrCache(request) {
 const FALLBACK =
     '<script>console.log(\"Блин. Чувак. У тебя инета нет((\");</script>\n' + 
     '<link rel="stylesheet" type="text/css" href="/MaksOn/css/style.css">\n' +
+    '<script type='text/javascript'>\n' +
+    '  setInterval(function(){\n' +
+    '    if(navigator.onLine)\n' +
+    '        location.href = \'/MaksOn/\';\n' +
+    '  }, 2000);\n' +
+    '</script>\n' +
     '<div id=\"off\">\n' +
     '    <h1>Хей. Молодец!)<h1>\n' +
     '    <h3>Тебе наверно интересно как это все работает, да?) Что же. Я дам тебе исходники))<h3><p><p>\n' +
