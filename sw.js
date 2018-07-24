@@ -2,11 +2,13 @@ const CACHE = 'offline-fallback-v1';
 
 setInterval(function(){
 	if(!navigator.onLine){
-		function reload(){
-			location.reload();	
-		}
+		reload();
 	}
 }, 1000);
+
+function reload(){
+			location.reload();	
+}
 
 self.addEventListener('install', (event) => {
     event.waitUntil(
