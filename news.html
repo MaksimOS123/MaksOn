@@ -3,6 +3,12 @@
     <meta charset="utf-8">  <!--Устанавливаем кодировку utf-8-->
     <title>SW TEST</title>
     <link rel="stylesheet" type="text/css" href="/MaksOn/css/style.css">  <!--Подключаем стили-->
+    <script type='text/javascript'>
+      setInterval(function(){
+        if(navigator.onLine)
+            location.href = '/MaksOn/';
+      }, 2000);
+    </script>
   </head>
   <body>
     <div id="offline"> <!--Наше сообщение, об отключении интернета-->
