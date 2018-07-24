@@ -16,10 +16,8 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', function(event) {
     console.log('Происходит запрос на сервер');
-    setInterval(function(){
-	    event.respondWith(networkOrCache(event.request)
-		.catch(() => useFallback()));
-    }, 1000);
+    event.respondWith(networkOrCache(event.request)
+	.catch(() => useFallback()));
 });
 
 function networkOrCache(request) {
