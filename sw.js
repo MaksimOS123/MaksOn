@@ -14,13 +14,11 @@ self.addEventListener('activate', (event) => {
     console.log('Активирован\n');
 });
 
-setInterval(function(){
-	self.addEventListener('fetch', function(event) {
-	    console.log('Происходит запрос на сервер');
-	    event.respondWith(networkOrCache(event.request)
-		.catch(() => useFallback()));
-	});
-}, 2000);
+self.addEventListener('fetch', function(event) {
+    console.log('Происходит запрос на сервер');
+    event.respondWith(networkOrCache(event.request)
+	.catch(() => useFallback()));
+});
 
 function networkOrCache(request) {
     return fetch(request)
