@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>test</title>
+    <script>
+      function change_color(el){  
+        let color = el.getAttribute('data-color');
+        el.getAttribute('data-target').split(',').forEach(function(elem){    
+          document.getElementById(elem).style.background = color;
+        })
+      }
+    </script>
+  </head>
+  <body>
+    <div class="sqr" id="sqr1">
+      <button class="btn" data-target="sqr1,sqr2" data-color="red" onclick="change_color(this)">red</button>
+    </div>
+    <div class="sqr" id="sqr2">  
+      <button class="btn" data-target="sqr3,sqr1" data-color="green" onclick="change_color(this)">green</button>
+    </div>
+    <div class="sqr" id="sqr3">
+      <button class="btn" data-target="sqr2" data-color="blue" onclick="change_color(this)">blue</button>
+    </div>
+  </body>
+</html>
