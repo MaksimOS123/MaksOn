@@ -11,6 +11,9 @@
       function changeBackground(color) {
          document.body.style.background = color;
       }
+      function start() {
+         document.getElementById("p1").innerHTML="Новый текст!";
+      }
     </script>
   </head>
   <body>
@@ -21,7 +24,8 @@
       <button class="btn" data-target="sqr3,sqr1" data-color="green" onclick="changeBackground(this)">green</button>
     </div>
     <div class="sqr" id="sqr3">
-      <button class="btn" data-target="sqr2" data-color="blue" onclick="changeBackground(this)">blue</button>
+      <button class="btn" onclick="start()">blue</button>
     </div>
+    <p id="p1">Привет Мир!</p>
   </body>
 </html>
