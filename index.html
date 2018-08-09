@@ -19,6 +19,11 @@
 		if(window.innerWidth<1000)
 		    location.href='https://maksimos123.github.io/Mobile/index.html';
 	</script>
+	<script>
+		if(!navigator.onLine){
+          		location.href='/MaksOn/offline.html';
+      		}
+    	</script>
 	<script type='text/javascript'>
 		setInterval(function(){
 			if(!navigator.onLine){
@@ -26,6 +31,7 @@
 			}
 		}, 1000);
 	</script>
+	
     </head>
     <body>
 		<input type="checkbox" id="nav-toggle" hidden>
