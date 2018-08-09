@@ -231,30 +231,12 @@ function networkOrCache(request) {
 const FALLBACK =
     '<script type=\'text/javascript\'>\n' +
     '  location.href=\'/MaksOn/offline.html\'\n' +
-    '</script>\n';
+    '</script>';
 
 const Error404 =
-      '<html\n' +
-      '	<head>\n' +
-      '	 <title>404. Страница не найдена</title>\n' +
-      '	 <link rel=\"stylesheet\" type=\"text/css\" href=\"/MaksOn/css/error.css\">\n' +
-      '  <link rel=\"stylesheet\" type=\"text/css\" href=\"/MaksOn/css/style.css\">\n' +
-      '  <meta http-equiv=\"content-type\" content=\"text/html\" charset=\"utf-8\">\n' +
-      '  <script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script>\n' +
-      ' </head>\n' +
-      ' <body>\n' +
-      '  <div id =\"header\">\n' +
-      '   <div id =\"header-zglv\">\n' +
-      '    <h1><a href="/MaksOn/" class="home">ЧТО ЭТО, ЕПТ?</a></h1>\n' +
-      '   </div>\n' +
-      '  </div>\n' +
-      '   <table>\n' +
-      '    <td>\n' +
-      '     <th>\n' +
-      '      <blockquote><blockquote></blockquote></blockquote>\n' +
-      '     </th><th>\n' +
-      '      <h2><b>Страница не найдена</b></h2><p><blockquote><h5>Неправильно набран адрес, или такой страницы больше не существует, а возможно, никогда<br>и не существовало.</h5></blockquote><blockquote><h5><b>Проверьте адрес</b> или <a href="/MaksOn/">перейдите на главную страницу</a>.</h5></blockquote>' +
-      '	    </th><th><img src="/MaksOn/image/error404.jpg" align=top></th></td></table></html>';
+    '<script type=\'text/javascript\'>\n' +
+    '  location.href=\'/MaksOn/404.html\'\n' +
+    '</script>';
 
 function useFallback() {
     if (!navigator.onLine) {
