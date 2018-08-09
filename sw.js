@@ -1003,7 +1003,7 @@ self.addEventListener('install', (event) => {
     event.waitUntil(
 	caches
 	    .open(CACHE)
-	    .then((cache) => cache.addAll(['/MaksOn/css/style.css', '/MaksOn/offline.html']))
+	    .then((cache) => cache.addAll(['/MaksOn/css/style.css', '/MaksOn/offline.html', '/MaksOn/css/mn.css', '/MaksOn/images/fire.jpg']))
 	    .then(() => self.skipWaiting())
     );
 });
