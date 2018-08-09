@@ -345,9 +345,7 @@ object{max-width:100%;}
 .other-focus-list ul li{display:inline-block;margin-right:50px;padding-bottom:15px;text-transform:uppercase;}
 .other-focus-list ul li:last-child{margin-right:0;}
 .other-focus-list ul li i{margin-right:8px;}
-#footer{background:#272727;line-height:20px;}
-#line{width: 90%; border-top: 1px solid #464646; position:relative; left: 5%; top: 110px}
-#copy{position:relative; top: 90px; width: 100%; color: #fff; height: 10px;}
+#footer{background:#272727;line-height:50px;}
 #cont{position:relative; top: 30px; width: 50%; float: left}
 #cont2{position:relative; top: 30px; width: 50%; float: right;}
 .company-details{padding-top:67px;padding-bottom:30px;color:#939393;}
