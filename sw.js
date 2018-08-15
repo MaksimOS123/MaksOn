@@ -29,21 +29,21 @@ const FALLBACK =
     '  location.href=\'/MaksOn/offline.html\'\n' +
     '</script>';
 
-const Error404 =
-    '<script type=\'text/javascript\'>\n' +
-    '  location.href=\'/MaksOn/404.html\'\n' +
-    '</script>';
+// const Error404 =
+//     '<script type=\'text/javascript\'>\n' +
+//     '  location.href=\'/MaksOn/404.html\'\n' +
+//     '</script>';
 
 function useFallback() {
-    if (!navigator.onLine) {
+//     if (!navigator.onLine) {
     	return Promise.resolve(new Response(FALLBACK, { headers: {
     	    'Content-Type': 'text/html; charset=utf-8'
     	}}));
-    } else {
-    	return Promise.resolve(new Response(Error404, { headers: {
-    	    'Content-Type': 'text/html; charset=utf-8'
-    	}}));
-    }
+//     } else {
+//     	return Promise.resolve(new Response(Error404, { headers: {
+//     	    'Content-Type': 'text/html; charset=utf-8'
+//     	}}));
+//     }
 }
 
 function fromCache(request) {
